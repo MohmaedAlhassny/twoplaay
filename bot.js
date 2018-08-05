@@ -257,7 +257,12 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
    }); 
    
 
+const anwar = new Discord.Client();
 
-   
+anwar.on('ready', () => {
+anwar.user.setGame('يا هوسة وخبصة خل صوتك ينصه.', 'https://twitch.tv/Alhassny');
+});
 
+
+anwar.login(process.env.ANWAR);
 client.login(process.env.TOKEN);
